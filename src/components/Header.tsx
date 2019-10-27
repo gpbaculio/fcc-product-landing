@@ -7,7 +7,7 @@ const Header = () => {
       <div className='container'>
         <div className='logo-container'>
           <GiGuitar className='logo' />
-          <h2>G guitars</h2>
+          <div className='logo-text'>GPB Guitars</div>
         </div>
         <nav>
           <ul>

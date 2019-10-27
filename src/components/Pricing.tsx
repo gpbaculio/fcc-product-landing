@@ -1,9 +1,12 @@
 import React from 'react';
+import PricingProductSlider from './PricingProductSlider';
 
 const Pricing = () => (
   <section className='pricing-container'>
-    <h2>Pricing</h2>
-    <hr />
+    <div className='heading-container'>
+      <h4>Pricing</h4>
+    </div>
+    <PricingProductSlider />
   </section>
 );
 

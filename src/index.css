@@ -8,6 +8,95 @@ body {
   background-color: #EBEAE8;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+/* carousel */
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2346A1BE' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2346A1BE' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+/* make slider indicator and icons prev and next visible */
+.carousel-container {
+  margin-left: 50px !important;
+  margin-right: 50px !important;
+  margin-bottom: 50px !important;
+}
+
+/* push extra 50px so it's more visible just outside the carousel */
+.carousel-control-next,
+.carousel-control-prev {
+  width: 50px !important;
+}
+
+/* SECTIONS HEADER */
+.heading-container {
+  display: flex;
+  justify-content: center;
+}
+
+.product-item {
+  background-color: #fff;
+  padding: 1rem;
+  height: 100%;
+}
+
+h4 {
+  color: #000;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  margin: 30px 0 50px;
+}
+
+h4::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  margin: 0 auto;
+  height: 3.5px;
+  background: #46A1BE;
+  left: 0;
+  right: 0;
+  bottom: -20px;
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+/* feature headers */
+h3 {
+  color: #000;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  margin: 10px 0 20px;
+}
+
+h3::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  margin: 0 auto;
+  height: 1px;
+  background: #46A1BE;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+}
+
 /* container */
 
 @media (min-width: 576px) {
@@ -103,7 +192,7 @@ body {
   margin-left: 15px;
   margin-right: 15px;
   background-color: white;
-  padding: .5rem;
+  padding: 1rem;
 }
 
 .features-info-body .feature:last-of-type {
@@ -135,7 +224,7 @@ body {
 }
 
 .how-container iframe {
-  height: 315px;
+  height: 100%;
 }
 
 .how-body {
@@ -145,15 +234,19 @@ body {
 
 .how-body .demo-container {
   width: 50%;
-  margin-right:.5rem;
+  margin-right: .5rem;
 }
 
 .how-body .how-info {
-  margin-left:.5rem;
+  margin-left: .5rem;
   text-align: justify;
   width: 50%;
   padding: 1rem;
   background-color: #fff;
+}
+
+.how-info .how-info-body {
+  margin-top: 5px;
 }
 
 .how-body .how-info h3 {
