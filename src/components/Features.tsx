@@ -4,7 +4,7 @@ import feature_2 from '../images/feature_2.jpeg';
 import feature_3 from '../images/feature_3.jpeg';
 const Features = () => {
   return (
-    <section className='features-container'>
+    <section id='features' className='features-container'>
       <div className='heading-container'>
         <h4>Features</h4>
       </div>

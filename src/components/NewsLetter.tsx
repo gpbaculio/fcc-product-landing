@@ -11,13 +11,22 @@ const NewsLetter = () => {
           times a month.
         </p>
       </div>
-      <form className='subscribe-form'>
+      <form
+        id='form'
+        className='subscribe-form'
+        action='https://www.freecodecamp.com/email-submit'>
         <InputGroup>
-          <Input placeholder='Your Email Address' />
+          <Input
+            name='email'
+            id='email'
+            type='email'
+            placeholder='Enter your email address'
+            required
+          />
           <InputGroupAddon addonType='append'>
-            <Button type='submit' className='subscribe-btn'>
+            <Input required id='submit' type='submit' className='subscribe-btn'>
               Subscribe
-            </Button>
+            </Input>
           </InputGroupAddon>
         </InputGroup>
       </form>

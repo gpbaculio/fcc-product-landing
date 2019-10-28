@@ -114,9 +114,9 @@ const PricingProductSlider = () => {
         in={true}
         key={uuidv1()}>
         <div className='carousel-container'>
-          <Row className='row-e'>
+          <Row>
             {prod.map(item => (
-              <Col key={item.src} sm='4'>
+              <Col key={item.src} md='4' className='product-column'>
                 <div className='product-item'>
                   <h3>{item.name}</h3>
                   <img className='my-2' width='100%' src={item.src} />
