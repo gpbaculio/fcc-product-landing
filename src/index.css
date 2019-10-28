@@ -97,38 +97,20 @@ h3::after {
   bottom: -10px;
 }
 
-/* container */
-
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-}
-
-.container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 /* header nav */
 
-#header {
-  background-color: #333333;
+#header,
+#footer {
+  background-color: #49565D !important;
+  color: #fff !important;
+}
+
+.navbar-brand {
+  color: #fff !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fff !important;
 }
 
 #header .container {
@@ -252,4 +234,17 @@ h3::after {
 .how-body .how-info h3 {
   margin-top: 0;
   text-align: center;
+}
+
+.subscribe-form {
+  width: 500px;
+}
+
+.subscribe-btn {
+  background-color: #46a1be;
+  border: solid #46a1be 1px;
+}
+
+.header-nav ul {
+  margin-bottom: 0;
 }
