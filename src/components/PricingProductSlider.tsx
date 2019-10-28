@@ -3,8 +3,7 @@ import {
   Carousel,
   CarouselItem,
   CarouselControl,
-  CarouselIndicators,
-  CarouselCaption
+  CarouselIndicators
 } from 'reactstrap';
 import product_1 from '../images/product_1.jpeg';
 import product_2 from '../images/product_2.jpeg';
@@ -119,7 +118,7 @@ const PricingProductSlider = () => {
               <Col key={item.src} md='4' className='product-column'>
                 <div className='product-item'>
                   <h3>{item.name}</h3>
-                  <img className='my-2' width='100%' src={item.src} />
+                  <img className='my-2' width='100%' src={item.src} alt='' />
                   <p className='lead'>{item.msrp}</p>
                   <small>{item.desc}</small>
                 </div>

@@ -1,9 +1,9 @@
 import React from 'react';
-import { InputGroup, Input, InputGroupAddon, Button } from 'reactstrap';
+import { InputGroup, Input, InputGroupAddon } from 'reactstrap';
 
 const NewsLetter = () => {
   return (
-    <section className='news-letter-container mt-5 p-5 text-center d-flex flex-column align-items-center'>
+    <section className='news-letter-container p-5 text-center d-flex flex-column align-items-center'>
       <div className='news-letter-header'>
         <h2 className='font-weight-lighter'>Let's stay in touch</h2>
         <p className='lead'>
@@ -24,9 +24,13 @@ const NewsLetter = () => {
             required
           />
           <InputGroupAddon addonType='append'>
-            <Input required id='submit' type='submit' className='subscribe-btn'>
-              Subscribe
-            </Input>
+            <Input
+              required
+              id='submit'
+              type='submit'
+              value={'Subscribe'}
+              className='subscribe-btn'
+            />
           </InputGroupAddon>
         </InputGroup>
       </form>

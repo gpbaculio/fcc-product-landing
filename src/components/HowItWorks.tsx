@@ -9,6 +9,7 @@ const HowItWorks = () => {
       <div className='how-body'>
         <div className='demo-container'>
           <iframe
+            title='how-it-works-video'
             id='video'
             width='100%'
             height='100%'

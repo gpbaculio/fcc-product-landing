@@ -11,7 +11,7 @@ const Features = () => {
       <div className='features-info-body'>
         <div className='feature'>
           <h3>Simple and Distinctive Looks</h3>
-          <img src={feature_1} />
+          <img src={feature_1} alt='' />
           <p className='mt-3'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
             sagittis est nec quam commodo blandit.
@@ -19,7 +19,7 @@ const Features = () => {
         </div>
         <div className='feature'>
           <h3>Elixir Strings</h3>
-          <img src={feature_2} />
+          <img src={feature_2} alt='' />
           <p className='mt-3'>
             Class aptent taciti sociosqu ad litora torquent per conubia nostra,
             per inceptos himenaeos.
@@ -27,7 +27,7 @@ const Features = () => {
         </div>
         <div className='feature'>
           <h3>High Comfort Neck Profile</h3>
-          <img src={feature_3} />
+          <img src={feature_3} alt='' />
           <p className='mt-3'>
             Aenean pellentesque libero ut orci volutpat fermentum. Aenean
             interdum nulla nibh, a malesuada purus maximus sed.{' '}

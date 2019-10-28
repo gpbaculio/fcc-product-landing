@@ -1,6 +1,4 @@
-import React from 'react';
-import { GiGuitar } from 'react-icons/gi';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import {
   Navbar,
   NavbarBrand,
@@ -8,13 +6,8 @@ import {
   Collapse,
   Nav,
   NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem
+  NavLink
 } from 'reactstrap';
-import guitar_logo from '../images/guitar_logo.png';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,6 +20,7 @@ const Header = () => {
           <NavbarBrand href='/'>
             <div className='logo-container'>
               <img
+                alt=''
                 src={
                   'https://i2.wp.com/www.classicalguitarcorner.com/wp-content/uploads/CGC-Logo-250.png?ssl=1'
                 }
